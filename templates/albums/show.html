@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Single Album</title>
+  </head>
+  <body>
+    <h1>Album: {{album.title}}</h1>
+    <p class="t-release-year">Release year: {{album.release_year}}</p>
+    <p>
+      <a href="/albums">Go back to album list</a>
+    </p>
+
+    <form action="/albums/{{album.id}}/delete" method="post">
+      <input type="submit" value="Delete Album">
+    </form>
+
+    
+  </body>
+</html>
